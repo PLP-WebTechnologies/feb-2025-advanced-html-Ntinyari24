@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES CORPS GYM & FITNESS CENTER</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgb(12, 13, 13);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px; /* Reduced text size */
+            margin: 15px;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .content {
+           width: 100%;
+           max-width: none;
+           padding: 20px;
+           background: white;
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+        h1 {
+            color: #0a0a0ae4;
+        }
+        ol {
+            list-style-type: lower-roman;
+            color: rgb(0, 0, 13);
+            text-align: left;
+            display: inline-block;
+        }
+        .button {
+            background-color: rgb(45, 2, 61);
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .input-field {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .break {
+            margin-bottom: 20px; /* Space between image and video */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#programs">PROGRAMS</a>
+        <a href="#contact">CONTACT US</a>
+        <a href="#login">LOGIN</a>
+        <a href="#register">REGISTER</a>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="home">
+        <h1>LES CORPS GYM & FITNESS CENTER</h1>
+        <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="gym" width="500" height="300" style="float:right; margin:10px;">
+        
+        <ol>
+            <li><a href =#gym>GYM</a></li>
+            <li><a href = #pilates>PILATES</a></li>
+            <li><a href =#yoga>YOGA</a></li>
+            <li><a href = #aerobics>AEROBICS</a></li>
+            <li><a href = #WEIGHTTRAINING>WEIGHT TRAINING</a></li>
+        </ol>
+    </section>
+
+    <div class="break"></div> <!-- Added space between image and video -->
+
+    <h2>Our Fitness Program</h2>
+    <video controls width="500" height="300">
+        <source src="C:\Users\GALPU\Downloads\workoutexample.mp4" type="video/mp4">
+    </video>
+
+    <p>Get a personalized plan to achieve your fitness goals. Our trainers will work with you to create a plan that fits your needs and lifestyle.</p>
+
+    <h2>OUR MISSION</h2>
+    <p style="color:rgb(6, 6, 6)">
+        Our mission is to provide a welcoming and inclusive environment for all individuals to achieve their fitness goals. We strive to offer high-quality fitness programs, expert guidance, and a supportive community to help our members succeed. 
+        We are committed to promoting health and wellness through fitness, education, and community engagement.
+    </p>
+
+    <div class="break"></div>
+    
+    <section id="register">
+        <h2>Register</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" class="input-field" name="name" placeholder="Enter your full name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="input-field" name="email" placeholder="Enter your email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="input-field" name="password" placeholder="Enter your password" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" class="input-field" name="dob" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" class="input-field" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label>Preferred Workout Type:</label><br>
+            <input type="radio" id="gym" name="workout" value="gym" required>
+            <label for="gym">Gym</label>
+            <input type="radio" id="yoga" name="workout" value="yoga">
+            <label for="yoga">Yoga</label>
+            <input type="radio" id="aerobics" name="workout" value="aerobics">
+            <label for="aerobics">Aerobics</label><br>
+
+            <label>Additional Preferences:</label><br>
+            <input type="checkbox" id="personal_training" name="preferences" value="personal_training">
+            <label for="personal_training">Personal Training</label>
+            <input type="checkbox" id="diet_plan" name="preferences" value="diet_plan">
+            <label for="diet_plan">Diet Plan</label><br>
+
+            <button type="submit" class="button">Register</button>
+        </form>
+    </section>
+</div>
+
+</body>
+
+</html>
